@@ -1,16 +1,16 @@
-public class RetiradaNaLoja extends Pedidos_Entregas{
+public class RetiradaNaLoja extends Entrega {
 
-public RetiradaNaLoja(String destino) {
-    super(destino);
-}
-
-    @Override
-    public String CalcularPrazo() {
-        return "1 dias";
+    public RetiradaNaLoja(String destino) {
+        super(destino);
     }
 
     @Override
-    public double CalcularFrete() {
+    public double calcularFrete() {
         return 0;
+    }
+
+    @Override
+    public String calcularPrazo() {
+        return "1 dia";
     }
 }

@@ -1,18 +1,16 @@
-public class EntregaNormal extends Pedidos_Entregas {
+public class EntregaNormal extends Entrega {
 
-
-    public EntregaNormal (String destino) {
+    public EntregaNormal(String destino) {
         super(destino);
     }
 
     @Override
-    public double CalcularFrete() {
+    public double calcularFrete() {
         return 21.00;
     }
 
     @Override
-    public String CalcularPrazo() {
+    public String calcularPrazo() {
         return "7 dias";
     }
-
 }
